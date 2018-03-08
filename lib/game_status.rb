@@ -21,11 +21,11 @@ def won?(board)
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       win = win_combination
-      win_XO == "X"
+      win_XO = "X"
       #break
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       win = win_combination
-      win_XO == "O"
+      win_XO = "O"
       #break
     end
   end
