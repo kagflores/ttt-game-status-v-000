@@ -33,7 +33,7 @@ def won?(board)
         puts win_XO
       else
       end
-    end    
+    end
   end
   return win
 end
@@ -61,5 +61,3 @@ def over?(board)
   else
   end
 end
-
-
