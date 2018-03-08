@@ -59,7 +59,7 @@ end
 
 def winner(board)
   if won?(board)
-    return winner
+    puts winner
   else
   end
 end
