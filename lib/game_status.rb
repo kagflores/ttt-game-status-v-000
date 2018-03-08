@@ -28,9 +28,8 @@ def won?(board)
       win_XO == "O"
       break
     end
-    return win
   end
-  return win_XO
+  return win
 end
 
 def full?(board)
