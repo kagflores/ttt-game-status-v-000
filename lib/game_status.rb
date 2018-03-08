@@ -24,13 +24,13 @@ def won?(board)
       win_XO == "X"
       break
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-      win_XO = win_combination
-      winner == "O"
+      win = win_combination
+      win_XO == "O"
       break
     end
   end
   return win
-  return winner
+  return win_XO
 end
 
 def full?(board)
