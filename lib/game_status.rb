@@ -50,5 +50,5 @@ def over?(board)
   elsif won?(board)
     return true
   else
-  end    
+  end
 end
