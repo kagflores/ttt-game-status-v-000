@@ -23,8 +23,12 @@ def won?(board)
       break
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       win = win_combination
-      break
+      break      
     end
   end
   return win
+end
+
+def full?(board)
+  board.any? {|space| space == " "}
 end
