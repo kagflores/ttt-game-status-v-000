@@ -28,12 +28,6 @@ def won?(board)
       win_XO = "O"
       #break
     end
-    def winner(board)
-      if won?(board)
-        puts win
-      else
-      end
-    end
   end
   return win
 end
@@ -58,6 +52,13 @@ def over?(board)
     return true
   elsif won?(board)
     return true
+  else
+  end
+end
+
+def winner(board)
+  if won?(board)
+    puts win_XO
   else
   end
 end
