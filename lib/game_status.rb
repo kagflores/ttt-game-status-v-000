@@ -58,6 +58,7 @@ def over?(board)
 end
 
 def winner(board)
+  win_XO = nil
   if won?(board)
     puts win_XO
   else
