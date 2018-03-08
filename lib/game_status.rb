@@ -9,6 +9,7 @@ WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],
 
 def won?(board)
   win = nil
+  winner = nil
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
@@ -20,9 +21,11 @@ def won?(board)
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       win = win_combination
+      winner = "X"
       break
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       win = win_combination
+      winner = "O"
       break
     end
   end
@@ -51,4 +54,9 @@ def over?(board)
     return true
   else
   end
+end
+
+def winner(board)
+  won?(board)
+  puts winner
 end
