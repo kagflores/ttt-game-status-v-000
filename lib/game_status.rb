@@ -30,7 +30,7 @@ def won?(board)
     end
     def winner(board)
       if won?(board)
-        puts win_XO
+        puts win
       else
       end
     end
