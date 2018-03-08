@@ -58,5 +58,5 @@ end
 
 def winner(board)
   won?(board)
-  puts winner
+  return winner
 end
